@@ -7,7 +7,7 @@ readme = "README.md"
 packages = [{ include = "python_version_checker" }]
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.7"
 
 [tool.poetry.group.dev.dependencies]
 black = "^22.12.0"
