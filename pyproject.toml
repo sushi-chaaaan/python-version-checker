@@ -10,6 +10,23 @@ packages = [{ include = "python_version_checker" }]
 python = "^3.9"
 
 
+[tool.poetry.group.dev.dependencies]
+black = "^22.12.0"
+isort = "^5.11.4"
+pyproject-flake8 = "^6.0.0.post1"
+
+[tool.black]
+line-length = 125
+
+[tool.flake8]
+max-line-length = 125
+extend-ignore = ["E203", "W503"]
+
+[tool.isort]
+profile = "black"
+line_length = 125
+skip_gitignore = true
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
